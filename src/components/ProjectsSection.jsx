@@ -48,6 +48,15 @@ const ProjectsSection = () => {
       tags: ["React.js", "CSS"],
       demoUrl:"https://myflix-clone-3o9sp4pj8.vercel.app/",
       githubUrl: "https://github.com/raymond1097/Netflix-Clone"
+    },
+    {
+      id: 6,
+      title: "Crypto Flow",
+      description: "A well-designed, responsive web application built with React.js and Tailwindcss, replicating user experience.",
+      image: "/projects/Crypto.png",
+      tags: ["React.js", "Tailwindcss"],
+      demoUrl:"https://crypto-flow-rosy.vercel.app/",
+      githubUrl: "https://github.com/raymond1097/crypto-flow"
     }
   ]
 
