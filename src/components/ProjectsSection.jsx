@@ -33,12 +33,12 @@ const ProjectsSection = () => {
     },
     {
       id: 4,
-      title: "Netflix Clone",
-      description: "A well-designed, responsive web application built with React.js and CSS, replicating the Netflix user experience.",
-      image: "/projects/Myflix.png",
-      tags: ["React.js", "CSS"],
-      demoUrl:"https://myflix-clone-3o9sp4pj8.vercel.app/",
-      githubUrl: "https://github.com/raymond1097/Netflix-Clone"
+      title: "Ominifood",
+      description: "A well-designed, responsive web application built with HTML, CSS, and JavaScript.",
+      image: "/projects/Ominifood.png",
+      tags: ["HTML", "CSS", "Javascript"],
+      demoUrl:"https://omnifood-eta.vercel.app/",
+      githubUrl: "https://github.com/raymond1097/omnifood"
     },
     {
       id: 5,

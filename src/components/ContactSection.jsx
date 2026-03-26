@@ -1,9 +1,9 @@
-import { Instagram, Linkedin, Mail, MapPin, Phone, Send, Twitter } from 'lucide-react'
-import { cn } from './lib/utils'
 import React, { useState } from 'react'
+import { Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react'
 import { useToast } from '../hooks/use-toast'
 import { title } from 'motion/react-client'
 import { Description } from '@radix-ui/react-toast'
+import ContactForm from './ContactForm'
 
 const ContactSection = () => {
   const {toast} = useToast()
@@ -93,27 +93,7 @@ const ContactSection = () => {
             <div className='bg-card p-8 rounded-lg shadow-xs' onSubmit={handleSubmit}>
               <h3 className='text-2xl font-semibold mb-6'>Send a Message</h3>
 
-              <form className='space-y-6'>
-                <div>
-                  <label htmlFor="name" className='block text-sm font-medium mb-2'>Your Name</label>
-                  <input type="text" id='name' name='name' required className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary' placeholder='Enter Your Name'/>
-                </div>
-
-                <div>
-                  <label htmlFor="name" className='block text-sm font-medium mb-2'>Your Email</label>
-                  <input type="email" id='email' name='email' required className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary' placeholder='Enter Your Email'/>
-                </div>
-
-                <div>
-                  <label htmlFor="name" className='block text-sm font-medium mb-2'>Your Message</label>
-                  <textarea id='message' name='message' required className='w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none' placeholder='Enter Your Message'/>
-                </div>
-                
-                <button type='submit' disabled={isSubmitting} className={cn("cosmic-button w-full flex items-center justify-center gap-2")}>
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                  <Send  size={16}/>
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
       </div>
